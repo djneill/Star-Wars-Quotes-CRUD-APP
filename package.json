@@ -1,8 +1,8 @@
 {
-  "name": "zellcrud",
+  "name": "starwarscrud",
   "version": "1.0.0",
   "description": "",
-  "main": "views/index.ejs",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
