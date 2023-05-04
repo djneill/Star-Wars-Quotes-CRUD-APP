@@ -1,0 +1,100 @@
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 125%;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+body {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto 2fr;
+  grid-template-areas:
+    "header header header"
+    "add-quotes update-quote delete-quote"
+    "quotes quotes quotes";
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem;
+  background-color: #ffffff;
+  background-image: linear-gradient(to bottom, #000000, #ffff00);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+li {
+  text-decoration: none;
+}
+
+[data-position="header"] {
+  grid-area: header;
+  text-align: center;
+}
+section[data-position="header"] {
+  display: inline-block;
+}
+
+[data-position="add-quotes"] {
+  grid-area: add-quotes;
+}
+
+section[data-position="add-quote"] {
+  background-image: url("images/star-wars-intro.jpeg");
+  background-position: center;
+  background-size: contain;
+  color: #FFE81F;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+[data-position="update-quotes"] {
+  grid-area: update-quotes;
+}
+section[data-position="update-quote"] {
+  background-image: url("images/darth-vader-iphone-828-x-1792-la3z1mclt952sikh.jpg");
+  background-position: fixed;
+  background-size: contain;
+  color: red;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+}
+
+[data-position="delete-quotes"] {
+  grid-area: delete-quotes;
+}
+
+section[data-position="delete-quote"]{
+  background-image: url("images/star-wars-luke-skywalker-4k-5006s22p0njo5ate.jpg");
+  background-position: center;
+  background-size: contain;
+  color: rgb(0, 89, 255);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+[data-position="quotes"] {
+  grid-area: quotes;
+  overflow: scroll;
+}
+section[data-position="quotes"] {
+  background-image: url("images/star-wars-background-62aczam5f195c36n.jpg");
+  background-position: center;
+  background-size: contain;
+  color: rgb(255, 165, 0);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+[data-position] {
+  background-color: rgba(255, 255, 255, .4);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+h1,
+h2 {
+  margin: 0;
+}
