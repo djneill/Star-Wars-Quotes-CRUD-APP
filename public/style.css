@@ -83,7 +83,7 @@ section[data-position="quotes"] {
   background-image: url("images/star-wars-background-62aczam5f195c36n.jpg");
   background-position: center;
   background-size: contain;
-  color: rgb(255, 165, 0);
+  color: yellow;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
