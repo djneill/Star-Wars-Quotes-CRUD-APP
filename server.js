@@ -80,6 +80,6 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
             console.log(`Server listening on port ${PORT}`);
         })
     })
-    .catch(console.error)
+    .catch(error => console.error(error))
 
 console.log('May Node be with you')
