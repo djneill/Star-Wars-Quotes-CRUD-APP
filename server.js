@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 const app = express()
+const cors = require('cors')
 require('dotenv').config()
 const port = process.env.PORT || 3000;
 
@@ -23,6 +24,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         app.use(bodyParser.urlencoded({ extended: true }))
         app.use(bodyParser.json())
         app.use(express.static('public'))
+        app.use(cors())
 
         // ========================
         // Routes
