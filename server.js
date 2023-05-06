@@ -56,10 +56,8 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
                     upsert: true,
                 }
             )
-                .then(result => {
-                    res.json('Sucess')
-                    .catch(error => console.error(error))
-                })
+                .then(result => res.json('Success'))
+                .catch(error => console.error(error))
         })
 
         app.delete('/quotes', (req, res) => {
