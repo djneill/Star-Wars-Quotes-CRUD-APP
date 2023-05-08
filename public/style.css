@@ -26,6 +26,28 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+@media all and (max-width: 468px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(5, auto);
+    grid-template-areas:
+      "header"
+      "add-quotes"
+      "update-quote"
+      "delete-quote"
+      "quotes";
+  }
+}
+@media all and (min-width: 469px) and (max-width: 767px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 2fr;
+    grid-template-areas:
+      "header header header"
+      "add-quotes update-quote delete-quote"
+      "quotes";
+  }
+}
 
 li {
   text-decoration: none;

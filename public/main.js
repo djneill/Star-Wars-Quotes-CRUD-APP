@@ -40,4 +40,3 @@ deleteButton.addEventListener('click', _ => {
     })
     .catch(err => console.log(err))
 })
-
