@@ -42,6 +42,7 @@ li {
 
 section {
   display: flex;
+  flex-direction: column;
 }
 
 [data-position="header"] {
@@ -122,7 +123,7 @@ h2 {
       "update-quote"
       "delete-quote"
       "quotes";
-      width: 100vw;
+      width: 100%;
   }
 }
 @media all and (min-width: 469px) and (max-width: 767px) {
