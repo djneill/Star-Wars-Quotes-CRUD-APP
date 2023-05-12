@@ -113,7 +113,7 @@ h2 {
   margin: 0;
 }
 
-@media all and (max-width: 468px) {
+@media all and (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows:repeat(5, 1fr);
@@ -126,7 +126,7 @@ h2 {
       width: 100%;
   }
 }
-@media all and (min-width: 469px) and (max-width: 767px) {
+@media all and (min-width: 481px) and (max-width: 767px) {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 2fr;
