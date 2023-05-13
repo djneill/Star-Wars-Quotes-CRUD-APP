@@ -123,7 +123,7 @@ h2 {
       "update-quote"
       "delete-quote"
       "quotes";
-      width: 100%;
+      width: 100vw;
   }
 }
 @media all and (min-width: 481px) and (max-width: 767px) {
