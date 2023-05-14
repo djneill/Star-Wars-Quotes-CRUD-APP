@@ -115,6 +115,7 @@ h2 {
 
 @media all and (max-width: 480px) {
   .grid {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows:repeat(5, 1fr);
     gap: .5rem;
