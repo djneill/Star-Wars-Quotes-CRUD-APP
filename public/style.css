@@ -113,7 +113,7 @@ h2 {
   margin: 0;
 }
 
-@media all and (max-width: 480px) {
+@media (max-width: 480px) {
   .grid {
     box-sizing: border-box;
     display: grid;
@@ -143,4 +143,4 @@ h2 {
       "add-quotes update-quote delete-quote"
       "quotes";
   }
-} 
+}
