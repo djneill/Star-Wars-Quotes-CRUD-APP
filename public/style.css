@@ -113,13 +113,11 @@ h2 {
   margin: 0;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .grid {
     box-sizing: border-box;
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr;
-    /* grid-template-columns: 1fr;
-    grid-template-rows:repeat(auto, 1fr); */
     gap: .5rem;
     grid-template-areas:
       "header"
@@ -127,12 +125,13 @@ h2 {
       "update-quote"
       "delete-quote"
       "quotes";
-      width: 100vw;
+    width: 100vw;
   }
   [data-position="quotes"] {
     height: 200px;
   }
 }
+
 @media all and (min-width: 481px) and (max-width: 767px) {
   .grid {
     display: grid;
